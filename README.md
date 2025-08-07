@@ -1,4 +1,5 @@
-# -graph TD
+```mermaid
+graph TD
     A[输入：最佳类比源(专利)] --> B{1. 功能(F)的再确认};
     B --> C{2. 结构(S)的详细解构};
     C -- 分析 --> D[组件、材料、布局等];
@@ -13,6 +14,3 @@
         E
         G
     end
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style H fill:#ccf,stroke:#333,stroke-width:2px
