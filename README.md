@@ -1,1 +1,18 @@
-# -
+# -graph TD
+    A[输入：最佳类比源(专利)] --> B{1. 功能(F)的再确认};
+    B --> C{2. 结构(S)的详细解构};
+    C -- 分析 --> D[组件、材料、布局等];
+    C --> E{3. 关键属性(A)的提炼};
+    E -- 分类 --> F[材料属性<br/>几何属性<br/>物理/化学属性];
+    E --> G{4. 核心行为(B)的系统推导};
+    G -- "因为(A)，所以(B)" --> H[输出：核心行为的因果链描述];
+
+    subgraph 逆向分析流程
+        B
+        C
+        E
+        G
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#ccf,stroke:#333,stroke-width:2px
